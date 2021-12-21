@@ -91,6 +91,8 @@ def create(dataset_root, mode, generated_root):
 if __name__ == '__main__':
     dataset_root = "../../data/mnt/ramdisk/max/90kDICT32px"
     generated_root = "./dataset/"
+    if not os.path.exists(generated_root):
+        os.makedirs(generated_root)
     create(dataset_root, "train", generated_root)
     create(dataset_root, "val", generated_root)
     create(dataset_root, "test", generated_root)

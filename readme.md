@@ -51,7 +51,7 @@ loading pretrained model from ./expr/crnn.pkl
 
 * 原始数据读取：操作简单，但速度慢
 
-  * 将`train.py`中52~62行替换为64~76行，并且设置64行的`dataset_root`为数据集目录，运行`python3 train.py`
+  * 将`train.py`中52至62行替换为64至76行，并且设置64行的`dataset_root`为数据集目录，运行`python3 train.py`
 * lmdb数据集读取：制作完成后IO速度加快数十倍，但制作该数据集耗时较长。
   * 设置`create_dataset.py`92行的`dataset_root`为数据集目录，并且运行（可能需要运行数天）
   * 运行`python3 train.py --trainRoot="./dataset/train" --valRoot="./dataset/val"`  
