@@ -92,7 +92,12 @@ Intelligence
           |--....（所有图片）
 ```
 
-你可以自己处理数据集，也可以用`git submodule`命令获取已经处理好的数据集和词表
+你可以自己处理数据集，也可以以下命令获取已经处理好的数据集和词表：
+
+````bash
+git submodule init
+git submodule update
+````
 
 运行`python test.py`即可得到测试结果
 
